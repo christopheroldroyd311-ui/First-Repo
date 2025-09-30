@@ -45,7 +45,7 @@ def player_heal(item_name):
         hero_stats["health"] = hero_max_health
 
     #removes health potion from inventroy after use
-    print (f"Your Health is now {hero_stats["health"]}")
+    print (f"Your Health is now {hero_stats['health']}")
     hero_inventory.remove("health potion")
     print(f"Your inventroy is now {hero_inventory}")
 
@@ -67,7 +67,7 @@ def use_item():
 #temp function
 def damage_player():
     hero_stats["health"] = hero_stats["health"] - 10
-    print (f"your Health is now {hero_stats["health"]}")
+    print (f"your Health is now {hero_stats['health']}")
 
 isPlaying = True
 

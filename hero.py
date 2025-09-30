@@ -36,7 +36,7 @@ class Hero ():
 
     def take_damage(self, damage):
         self.stats["health"] = self.stats["health"] - damage
-        print (f"your Health is now {self.stats["health"]}")
+        print (f"your Health is now {self.stats['health']}")
 
     def heal(self, item_name):
 
@@ -51,7 +51,7 @@ class Hero ():
             print("You've reached max health")
             self.stats["health"] = self.max_health
 
-        print (f"Your Health is now {self.stats["health"]}")
+        print (f"Your Health is now {self.stats['health']}")
         self.inventory.remove("health potion")
         print(f"Your inventroy is now {self.inventory}")
 
